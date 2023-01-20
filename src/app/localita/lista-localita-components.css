@@ -1,0 +1,12 @@
+td {
+  padding-right: 25px;
+  border-bottom: groove;
+  border-right: groove;
+}
+th {
+  padding-right: 75px;
+  border-bottom: groove;
+}
+table {
+  border: groove;
+}
