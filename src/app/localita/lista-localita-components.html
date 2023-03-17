@@ -12,7 +12,7 @@
       <th></th>
       <th>Prezzo:</th>
     </tr>
-    <tr *ngFor="let l of localita">
+    <tr *ngFor="let l of localitaFiltrate">
       <td>{{ l.nome }}</td>
       <td>{{ l.nazione }}</td>
       <td><img *ngIf="mostraImmagine" [src]="l.img" width="200px" /></td>

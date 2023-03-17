@@ -35,7 +35,8 @@ export class LocalitaComponent implements OnInit {
 
   datiFiltrati(filtratoPer: string): Localita[] {
     filtratoPer = filtratoPer.toLocaleLowerCase();
-
-    return;
+    return this.localita.filter((loc: Localita) =>
+      loc.nome.toLocaleLowerCase().includes(filtratoPer)
+    );
   }
 }
