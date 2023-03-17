@@ -17,6 +17,7 @@
       <td>{{ l.nazione }}</td>
       <td><img *ngIf="mostraImmagine" [src]="l.img" width="200px" /></td>
       <td>{{ l.prezzo | currency:'EUR' : 'symbol' : '1.0-0'}}</td>
+      <td><stella [rating]="l.starRating"></stella></td>
     </tr>
   </table>
 </div>
