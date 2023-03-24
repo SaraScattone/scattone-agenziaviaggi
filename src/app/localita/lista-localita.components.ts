@@ -36,4 +36,11 @@ export const LOCALITA: Localita[] = [
     prezzo: 1700,
     starRating: 3.2,
   },
+  {
+    nome: 'Seoul',
+    nazione: 'Corea del Sud',
+    img: 'https://www.holidify.com/images/bgImages/SEOUL.jpg',
+    prezzo: 1950,
+    starRating: 4,
+  },
 ];
