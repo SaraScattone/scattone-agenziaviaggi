@@ -43,4 +43,18 @@ export const LOCALITA: Localita[] = [
     prezzo: 1950,
     starRating: 4,
   },
+  {
+    nome: 'Tibet',
+    nazione: 'Cina',
+    img: 'https://static2-viaggi.corriereobjects.it/wp-content/uploads/2015/06/tibet.jpg?v=134764',
+    prezzo: 2400,
+    starRating: 5,
+  },
+  {
+    nome: 'Los Angeles',
+    nazione: 'Stati Uniti',
+    img: 'https://images.placesonline.com/photos/424011705220949_jake-blucker-8LlJNFLTEm0-unsplash.jpg?quality=80&w=700',
+    prezzo: 1150,
+    starRating: 4,
+  },
 ];
