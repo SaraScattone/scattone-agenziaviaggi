@@ -1,4 +1,4 @@
-export interface Localita {
+export interface ILocalita {
   nome: string;
   nazione: string;
   img: string;

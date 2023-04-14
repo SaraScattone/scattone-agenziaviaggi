@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Localita } from '../localita';
 import { LOCALITA } from './lista-localita.components';
+import { LocalitaService } from './localita.service';
 
 @Component({
   selector: 'app-localita',
@@ -12,6 +13,8 @@ export class LocalitaComponent implements OnInit {
   mostraImmagine: boolean = false;
   private _listFilter: string = '';
   localitaFiltrate: Localita[] = [];
+
+  constructor(private localitaServizio: LocalitaService) {}
 
   get listFilter(): string {
     return this._listFilter;
@@ -31,6 +34,7 @@ export class LocalitaComponent implements OnInit {
     console.log('lista creata');
 
     this.listFilter = '';
+    this.localita = this.localitaServizio.getLocalita();
   }
 
   datiFiltrati(filtratoPer: string): Localita[] {
